@@ -1,0 +1,11 @@
+.navbar-button {
+    text-decoration: none;
+    color: black;
+}
+.navbar-button:hover {
+    color: orange;
+}
+
+.navbar-button:active {
+    color: orange;
+}
