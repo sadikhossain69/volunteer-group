@@ -6,10 +6,10 @@ const Register = () => {
     return (
         <div style={{ height: '80vh' }} className='d-flex justify-content-center align-items-center' >
             <div>
-                <h2>This is Register!!!</h2>
-                <button className='w-100 register-button'>
+                <h2>Registration With!</h2>
+                <button className='w-100 btn btn-primary register-button mt-3'>
                     <BsGoogle/>
-                    Contiue with Google
+                    <span className='m-2'>Contiue with Google</span>
                 </button>
             </div>
         </div>
