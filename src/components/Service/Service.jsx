@@ -1,13 +1,22 @@
 import './Service.css'
 import React from 'react';
 import toast, { Toaster } from 'react-hot-toast';
+import axios from 'axios';
 
 const Service = ({ service }) => {
-    const { _id, name, photoUrl } = service
+    const { name, photoUrl } = service
 
     const handleServiceName = event => {
         toast('Thanks For Helping!😊')
         console.log(event);
+        const url = `http://localhost:5000/youhelped`
+        axios.post(url, {
+            name: name,
+            photoUrl: photoUrl
+        })
+        .then(res => {
+            console.log(res);
+        })
     }
 
     return (
@@ -15,7 +24,7 @@ const Service = ({ service }) => {
             <div>
                 <img className='img-fluid' src={photoUrl} alt="" />
                 <span>
-                    <h5 onClick={handleServiceName} className='btn btn-outline-success text-center d-block' >{name}</h5>
+                    <h5 onClick={() => handleServiceName(service)} className='btn btn-outline-success text-center d-block' >{name}</h5>
                 </span>
                 <Toaster />
             </div>
