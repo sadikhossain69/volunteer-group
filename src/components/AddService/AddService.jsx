@@ -2,6 +2,7 @@ import './AddService.css'
 import React from 'react';
 import PageTitle from '../Shared/PageTitle/PageTitle';
 import axios from 'axios';
+import { toast } from 'react-toastify';
 
 const AddService = () => {
 
@@ -17,6 +18,9 @@ const AddService = () => {
         })
         .then(response => {
             console.log({success: 'true',}, response);
+            if(response.status === 200) {
+                return toast('Successfully added')
+            }
         })
     }
 
