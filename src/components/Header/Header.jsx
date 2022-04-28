@@ -16,7 +16,7 @@ const Header = () => {
                     </ul>
                     <Link className='navbar-button me-5 d-block mb-1' to='/home' >Home</Link>
                     <Link className='navbar-button me-5 d-block mb-1' to='/addservice' >Add Service</Link>
-                    <Link className='navbar-button me-5 d-block mb-1' to='/donation' >Donation</Link>
+                    <Link className='navbar-button me-5 d-block mb-1' to='/youhelped' >You Helped</Link>
                     <Link className='navbar-button me-5 d-block mb-1' to='/event' >Event</Link>
                     <Link className='navbar-button me-5 d-block mb-1' to='/blog' >Blog</Link>
                     <button className='btn btn-primary' >

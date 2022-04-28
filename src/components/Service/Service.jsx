@@ -6,7 +6,7 @@ const Service = ({ service }) => {
     const { _id, name, photoUrl } = service
 
     const handleServiceName = event => {
-        toast('Your One Help Will Save A Life😊')
+        toast('Thanks For Helping!😊')
         console.log(event);
     }
 
