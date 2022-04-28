@@ -9,7 +9,6 @@ import Blogs from './components/Blogs/Blogs';
 import Register from './components/Register/Register';
 import PageNotFound from './components/PageNotFound/PageNotFound';
 import AddService from './components/AddService/AddService';
-import { ToastContainer } from 'react-toastify';
 
 function App() {
   return (
@@ -25,7 +24,6 @@ function App() {
         <Route path='/register' element={<Register/>} ></Route>
         <Route path='*' element={<PageNotFound/>} ></Route>
       </Routes>
-      <ToastContainer />
     </div>
   );
 }
