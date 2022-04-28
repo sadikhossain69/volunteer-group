@@ -15,6 +15,7 @@ const Header = () => {
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     </ul>
                     <Link className='navbar-button me-5 d-block mb-1' to='/home' >Home</Link>
+                    <Link className='navbar-button me-5 d-block mb-1' to='/addservice' >Add Sercie</Link>
                     <Link className='navbar-button me-5 d-block mb-1' to='/donation' >Donation</Link>
                     <Link className='navbar-button me-5 d-block mb-1' to='/event' >Event</Link>
                     <Link className='navbar-button me-5 d-block mb-1' to='/blog' >Blog</Link>

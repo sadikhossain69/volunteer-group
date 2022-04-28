@@ -8,6 +8,7 @@ import Events from './components/Events/Events';
 import Blogs from './components/Blogs/Blogs';
 import Register from './components/Register/Register';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import AddService from './components/AddService/AddService';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>} ></Route>
         <Route path='/home' element={<Home/>} ></Route>
+        <Route path='/addservice' element={<AddService/>} ></Route>
         <Route path='/donation' element={<Donation/>} ></Route>
         <Route path='/event' element={<Events/>} ></Route>
         <Route path='/blogs' element={<Blogs/>} ></Route>

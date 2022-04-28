@@ -1,10 +1,12 @@
 import './Register.css'
 import React from 'react';
 import { BsGoogle } from 'react-icons/bs'
+import PageTitle from '../Shared/PageTitle/PageTitle';
 
 const Register = () => {
     return (
         <div style={{ height: '80vh' }} className='d-flex justify-content-center align-items-center' >
+            <PageTitle route="Register" />
             <div>
                 <h2>Registration With!</h2>
                 <button className='w-100 btn btn-primary register-button mt-3'>
